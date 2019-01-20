@@ -21,8 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -c .public",
-    "build-storybook": "build-storybook -s public",
+    "storybook": "start-storybook -p 9009 -c .storybook",
+    "build-storybook": "build-storybook -s .storybook",
     "lint": "eslint src .storybook --fix"
   },
   "eslintConfig": {
@@ -36,6 +36,7 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
     "babel-loader": "^8.0.5",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
