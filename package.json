@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-actions": "^4.1.7",
+    "@storybook/addon-links": "^4.1.7",
+    "@storybook/addons": "^4.1.7",
+    "@storybook/react": "^4.1.7",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-async-helpers": "^0.9.1",
+    "jest-fetch-mock": "^2.1.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1"
+    "react-scripts": "2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,10 +36,6 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.2.2",
-    "@storybook/addon-actions": "^4.1.7",
-    "@storybook/addon-links": "^4.1.7",
-    "@storybook/addons": "^4.1.7",
-    "@storybook/react": "^4.1.7",
     "babel-loader": "^8.0.5",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
@@ -41,5 +43,20 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.4",
     "react-test-renderer": "^16.7.0"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/*.stories.js",
+      "!**/node_modules/**"
+    ]
   }
 }
