@@ -11,6 +11,12 @@ To get started developing right away:
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
 
+## NPM Commands
+* Run storybook (open [localhost:9009](localhost:9009)) `npm run storybook`
+* Run tests `npm test`
+* Run coverage `npm test -- --coverage`
+* Run lint `npm run lint`
+
 ## What You're Getting
 ```bash
 ├── CONTRIBUTING.md
